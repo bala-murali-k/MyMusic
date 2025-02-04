@@ -1,0 +1,33 @@
+#sidebar-container {
+	background-color: #A1E3F9;
+	width: 65vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#outside-container-main-player-wrapper {
+	background-color: #578FCA;
+	width: 90vw;
+	height: 90vh;
+}
+
+#title-application-name {
+	display: block;
+	text-align: center;
+	font-weight: 200;
+}
+
+#title-application-description {
+	display: block;
+	text-align: center;
+	font-weight: 200;
+	font-size: 100px
+}
+
+.montserrat-font-apply {
+	font-family: "Montserrat", serif;
+	font-optical-sizing: auto;
+	font-size: 180px;
+	font-style: normal;
+}
