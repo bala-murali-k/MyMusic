@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+		<title>My Music Application</title>
+		<link rel="stylesheet" href="./style.css" >
+		<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="../session.script.js"></script>
+	</head>
+	<body>
+		<div id="test.container" ></div>
+	</body>
+	<script>
+		function loadHTML(componentPath, containerId, cssPath) {
+			fetch(componentPath).then(response => response.text()).then((html) => {
+				document.getElementById(containerId).innerHTML = html;
+			if (cssPath) {
+				const link = document.createElement("link");
+				link.rel = "stylesheet";
+				link.href = cssPath;
+				document.head.appendChild(link);
+			}
+			}).catch(error => console.error("Error loading component: ", error));
+		}
+		
+		loadHTML('/common.components/sidebar.index.html', 'test.container', '/common.components/sidebar.style.css');
+		setSessionRecord(isAuthourized, false);
+	</script>
+</html>

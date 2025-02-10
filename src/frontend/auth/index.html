@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Music
+        </title>
+        <script type="text/javascript" src="../session.script.js"></script>
+        <script type="module">
+            import { setSessionRecord } from '../session.script.js';
+            let variable1 = "test";
+            console.log(variable1);
+            setSessionRecord("isAuthourized", false);
+        </script>
+        <!-- <script>setSessionRecord(isAuthourized, false);</script> -->
+    </head>
+    <body>
+        <form action="/auth" method="post">
+            <input type="text" name="password" id="password" required>
+            <input type="submit" value="TestSubmit">
+        </form>
+        <!-- <script>
+            setSessionRecord(isAuthourized, false);
+        </script> -->
+    </body>
+</html>
